@@ -1,0 +1,67 @@
+#mobile {
+	font-size: 5em;
+	color: red;
+}
+
+@media only screen and (min-width: 780px) {
+	#mobile {
+		display: none;
+	}
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Oswald', sans-serif;
+		letter-spacing: .1em;
+		background-image: url("bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#container {
+		height: 98vh;
+		padding-top: 15vh;
+		box-sizing: border-box;
+		color: white;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#name {
+		border: 5px solid black;
+		border-color: white;
+		padding: 20px;
+	}
+
+	#slogan {
+		font-family: 'Tangerine', cursive;
+		font-size: 3em;
+	}
+
+	#nav {
+		height: 2vh;
+		display: flex;
+		width: 100vw;
+	}
+	#nav-left {
+		width: 65vw;
+	}
+	#nav-right {
+		width: 35vw;
+		text-align: right;
+	}
+	#nav-left > a {
+		padding-left: 22px;
+	}
+	#nav-right > a {
+		padding-right: 22px;
+	}
+	#nav-left > a, #nav-right > a {
+		text-decoration: none;
+		color: white;
+		font-size: 1.5em;
+	}
+	#nav-left > a:hover, #nav-right > a:hover {
+		text-decoration: underline;
+	}
+}
