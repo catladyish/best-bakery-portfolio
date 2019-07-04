@@ -9,20 +9,35 @@
 		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
 	</head>
 	<body>
-		<!--NOT MADE MOBILE COMPATABLE-->
-		<h1 id="mobile">WEBSITE NOT MOBILE COMPATABLE!</h1>
+		<script>
+			function openNav() {
+				document.getElementById("mobile-nav").style.display = "flex";
+			}
+			
+			function closeNav() {
+				document.getElementById("mobile-nav").style.display = "none";
+			}
+		</script>
 		
 		<div id="nav">
 			<div id="nav-left">
-				<a href="#" style="text-decoration: underline;">Home</a>
-				<a href="#">About</a>
-				<a href="#">Prices</a>
+				<a class="nav-button" href="#" style="text-decoration: underline;">Home</a>
+				<a class="nav-button" href="#">About</a>
+				<a class="nav-button" href="#">Prices</a>
 			</div>
 			<div id="nav-right">
-				<a href="#">Login</a>
+				<a class="nav-button" href="#">Login</a>
 			</div>
 		</div>
+		<div id="mobile-nav">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Prices</a>
+			<a href="#">Login</a>
+			<button id="close-mobile-nav-button" class="nav-button" onclick="closeNav()" >&times;</button>
+		</div>
 		<div id="container">
+			<button id="open-mobile-nav-button" class="nav-button" onclick="openNav()">&#9776;</button>
 			<h1 id="name">BEST BAKERY</h1>
 			<h2 id="slogan">We have the BEST slogan ever, too!</h2>
 		</div>

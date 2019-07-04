@@ -1,13 +1,36 @@
-#mobile {
-	font-size: 5em;
-	color: red;
+#open-mobile-nav-button {
+	font-size: 200%;
+	display: none;
 }
 
-@media only screen and (min-width: 780px) {
-	#mobile {
-		display: none;
-	}
-	body {
+#close-mobile-nav-button {
+	font-size: 150%;
+	display: flex;
+}
+
+.nav-button {
+	color: white;
+	font-family: inherit;
+	border: 0px;
+	background-color: rgb(255, 255, 255, 0);
+}
+
+#mobile-nav {
+	height: 100vh;
+	width: 100vw;
+	background-color: rbg(255, 255, 255);
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-size: 4em;
+	display: none;
+}
+#mobile-nav > a {
+	text-decoration: none;
+	color: white;
+}
+
+body {
 		margin: 0px;
 		padding: 0px;
 		font-family: 'Oswald', sans-serif;
@@ -36,6 +59,10 @@
 	#slogan {
 		font-family: 'Tangerine', cursive;
 		font-size: 3em;
+		text-align: center;
+		text-shadow: 4px 2px 2px rgba(0, 0, 0, .6);
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	#nav {
@@ -63,5 +90,17 @@
 	}
 	#nav-left > a:hover, #nav-right > a:hover {
 		text-decoration: underline;
+	}
+
+@media only screen and (max-width: 780px) {
+	#name {
+		border: none;
+		padding: 0px;
+	}
+	.nav-button {
+		display: none;
+	}
+	#open-mobile-nav-button {
+		display: flex;
 	}
 }
