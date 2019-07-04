@@ -1,2 +1,2 @@
 # Best Bakery - Portfolio Website
-For portfolio, WEBSITE NOT MOBILE COMPATABLE
+For portfolio, NOW MOBILE COMPATIBLE!
